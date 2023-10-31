@@ -3,3 +3,4 @@
 /lib/
 pyvenv.cfg
 /tests/.pytest_cache/
+.gitignore
