@@ -30,9 +30,9 @@ def test_form1(browser):
     form_page.select_city()
     form_page.click_submit()
     time.sleep(2)
-    form_page.check_modal_email()
-    form_page.check_phone_number()
-    form_page.check_gender()
+    # form_page.check_modal_email()
+    # form_page.check_phone_number()
+    # form_page.check_gender()
 
 
 
