@@ -4,3 +4,4 @@
 pyvenv.cfg
 /tests/.pytest_cache/
 .gitignore
+.idea
