@@ -43,7 +43,7 @@ def test_form2(browser):
     form_table_page.click_practice_form()
     form_page = FormPage(browser)
     form_page.fill_in_fist_name("First")
-    time.sleep(5)
+    time.sleep(10)
 
 
 
