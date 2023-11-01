@@ -1,5 +1,6 @@
 from pages.form_page import FormPage
-from selenium.webdriver.common.by import By
+from pages.form_page_table import FormPageTable
+from pages.main_page import MainPage
 import time
 from generator.generator import generate_person
 
@@ -33,6 +34,17 @@ def test_form1(browser):
     # form_page.check_modal_email()
     # form_page.check_phone_number()
     # form_page.check_gender()
+
+def test_form2(browser):
+    main_page = MainPage(browser)
+    main_page.open("https://demoqa.com/")
+    main_page.click_practice_form1()
+    form_table_page = FormPageTable(browser)
+    form_table_page.click_practice_form()
+    form_page = FormPage(browser)
+    form_page.fill_in_fist_name("First")
+    time.sleep(5)
+
 
 
 

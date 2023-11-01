@@ -15,7 +15,6 @@ def browser():
     driver.quit()
 
 
-# def test1(browser):
-#     browser.get("https://demoqa.com/automation-practice-form")
-#     browser.find_element(By.XPATH, "//input[@id='firstName']").send_keys("Test12345")
-
+def test1(browser):
+    browser.get("https://demoqa.com/")
+    browser.find_element(By.XPATH, "//*[text() = 'Forms']").click()
